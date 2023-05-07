@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "coc-json": ">=1.8.0",
+    "coc-clangd": ">=0.28.0",
+    "coc-cmake": ">=0.2.1",
+    "coc-highlight": ">=2.0.4",
+    "coc-git": ">=2.6.1",
+    "coc-sh": ">=1.1.1",
+    "coc-pyright": ">=1.1.305"
+  }
+}
