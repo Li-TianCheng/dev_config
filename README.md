@@ -14,8 +14,7 @@ sudo apt install zsh
 2. git clone and copy to home
 ```bash
 git clone https://github.com/Li-TianCheng/dep_config.git
-cd dep_config
-cp -rf ./.** $HOME/
+cp -rf `ls -a dep_config | grep -w '\.[^g.].*' | xargs` $HOME/
 ```
 
 3. install clangd by coc.nvim on vim
@@ -23,7 +22,7 @@ cp -rf ./.** $HOME/
 :CocCommand clangd.install
 ```
 
-* When compiling C++, add in `CMakeList.txt`:
+* when compiling C++, add in `CMakeList.txt`:
 ```cmake
 set (CMAKE_EXPORT_COMPILE_COMMANDS ON)
 ```
