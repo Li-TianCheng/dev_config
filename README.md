@@ -14,7 +14,8 @@ sudo apt install zsh
 2. git clone and copy to home
 ```bash
 git clone https://github.com/Li-TianCheng/dep_config.git
-cp -rf `ls -a dep_config | grep -w '\.[^g.].*' | xargs` $HOME/
+cd dep_config
+cp -rf `ls -a . | grep -w '\.[^g.].*' | xargs` $HOME/
 ```
 
 3. install clangd by coc.nvim on vim
