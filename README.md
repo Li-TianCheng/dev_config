@@ -20,6 +20,7 @@ cp -rf `ls -a . | grep -w '\.[^g.].*' | xargs` $HOME/
 
 3. install clangd by coc.nvim on vim
 ```
+# sudo apt install clangd
 :CocCommand clangd.install
 ```
 
