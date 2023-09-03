@@ -15,8 +15,8 @@ sudo apt install zsh
 
 2. git clone and copy to home
 ```bash
-git clone https://github.com/Li-TianCheng/dep_config.git
-cd dep_config
+git clone https://github.com/Li-TianCheng/dev_config.git
+cd dev_config
 cp -rf `ls -a . | grep -w '\.[^g.].*' | xargs` $HOME/
 ```
 
