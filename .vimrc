@@ -40,6 +40,11 @@ nnoremap <S-t> :tabedit<CR>
 nnoremap <S-Left> :tabprevious<CR>
 nnoremap <S-Right> :tabnext<CR>
 
+hi CursorLine term=bold,underline cterm=bold,underline gui=underline,underline
+hi Visual cterm=bold
+set fdm=indent                                                                                                                                                                                                                                                                     
+set foldlevelstart=99
+
 "----------------------------------------------------------------------------
 "                              ctrlsf.vim
 "----------------------------------------------------------------------------
