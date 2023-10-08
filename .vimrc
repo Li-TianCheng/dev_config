@@ -39,6 +39,7 @@ let mapleader=","
 nnoremap <S-t> :tabedit<CR>
 nnoremap <S-Left> :tabprevious<CR>
 nnoremap <S-Right> :tabnext<CR>
+nnoremap <leader>l :MRU<CR>
 
 hi CursorLine term=bold,underline cterm=bold,underline gui=underline,underline
 hi Visual cterm=bold
