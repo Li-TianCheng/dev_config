@@ -77,5 +77,5 @@ cp .vim/coc-settings.json $HOME/.vim
 # sudo apt install clangd
 :CocCommand clangd.install
 # install coc.nvim plugs
-:CocInstall coc-json coc-clangd coc-cmake coc-git coc-pyright coc-sh coc-hightlight coc-yaml
+:CocInstall coc-json coc-clangd coc-cmake coc-git coc-pyright coc-sh coc-highlight coc-yaml
 ```
