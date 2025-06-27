@@ -2,6 +2,7 @@
 " Add your own customizations in ~/.vim_runtime/my_configs.vim
 set runtimepath+=~/.vim_runtime
 
+source ~/.vim/autoload/plug.vim
 source ~/.vim_runtime/vimrcs/basic.vim
 source ~/.vim_runtime/vimrcs/filetypes.vim
 source ~/.vim_runtime/vimrcs/plugins_config.vim
@@ -32,6 +33,7 @@ set t_ut=n
 set cursorline
 set nu
 set showcmd
+set mouse=""
 syntax enable
 filetype on
 let mapleader=","
@@ -286,5 +288,4 @@ set ts=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set term=xterm-256color
 
