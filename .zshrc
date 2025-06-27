@@ -102,3 +102,4 @@ unsetopt correct_all
 
 export TERM=xterm-256color
 export LANG=zh_CN.UTF-8
+alias vim="nvim"
