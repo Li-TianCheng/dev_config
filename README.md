@@ -23,7 +23,8 @@ curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && apt-get install -y 
 cp dev_config/.vimrc . \
 mkdir -p .config/nvim/ \
 ln -s ~/.vimrc ~/.config/nvim/init.vim
-cp dev_config/coc-settings.json ~/.config/nvim/
+cp dev_config/coc-settings.json ~/.config/nvim/ \
+apt install ack
 ```
 2. vim-plugs config
 ```bash
@@ -39,4 +40,9 @@ cp dev_config/coc-settings.json ~/.config/nvim/
 * when compiling C++, add in `CMakeList.txt`:
 ```cmake
 set (CMAKE_EXPORT_COMPILE_COMMANDS ON)
+```
+
+* python format
+```python
+pip install autopep8
 ```
