@@ -48,13 +48,19 @@ cp .zshrc $HOME
 ```bash
 # install tmux
 sudo apt install tmux
+cd
+git clone --single-branch https://github.com/gpakosz/.tmux.git
+cp .tmux/.tmux.conf.local .
+cd dev_config
 # copy .tmux.conf to $HOME
 cp .tmux.conf $HOME
 ```
 3. vim config
 ```bash
 # install vim
-sudo apt install vim
+wget https://github.com/neovim/neovim/releases/download/v0.10.3/nvim-linux64.tar.gz
+tar -zxvf nvim-linux64.tar.gz
+cp -r nvim-linux64/* /usr/
 # install vimrc
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
@@ -62,12 +68,15 @@ sh ~/.vim_runtime/install_awesome_vimrc.sh
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 # install node
-curl -fsSL https://deb.nodesource.com/setup_14.x | sudo -E bash - &&\
+curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs
 # copy .vimrc to $HOME
 cp .vimrc $HOME
 # copy coc-settings.json to $HOME/.vim
 cp .vim/coc-settings.json $HOME/.vim
+cd
+mkdir -p .config/nvim/
+ln -s .vimrc .config/nvim/init.vim
 ```
 4. install plugs by vim
 ```bash
