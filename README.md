@@ -38,6 +38,18 @@ sudo apt install ack -y
 :CocInstall coc-json coc-clangd coc-cmake coc-git coc-pyright coc-sh coc-highlight coc-yaml
 ```
 
+3. tmux plugs config
+```bash
+# install tmux plugs
+ctrl+b+I
+# save
+ctrl+b+ctrl+s
+# load
+ctrl+b+ctrl+r
+# win sync
+ctrl+b+i
+```
+
 * when compiling C++, add in `CMakeList.txt`:
 ```cmake
 set (CMAKE_EXPORT_COMPILE_COMMANDS ON)
