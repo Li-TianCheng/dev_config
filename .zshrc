@@ -103,19 +103,3 @@ unsetopt correct_all
 export TERM=xterm-256color
 export LANG=zh_CN.UTF-8
 alias vim="nvim"
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/litiancheng01/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/litiancheng01/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/litiancheng01/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/litiancheng01/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
