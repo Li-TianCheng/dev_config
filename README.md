@@ -25,7 +25,8 @@ cp dev_config/.vimrc . \
 mkdir -p .config/nvim/ \
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 cp dev_config/coc-settings.json ~/.config/nvim/ \
-sudo apt install ack -y
+sudo apt install ack -y \
+conda init zsh
 ```
 2. vim-plugs config
 ```bash
