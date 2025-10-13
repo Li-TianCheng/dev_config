@@ -33,8 +33,9 @@ conda init zsh
 # install vim plugs
 :PlugInstall
 # install clangd
-# sudo apt install clangd
-:CocCommand clangd.install
+sudo apt-get install clangd-12
+sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
+# :CocCommand clangd.install
 # install coc.nvim plugs
 :CocInstall coc-json coc-clangd coc-cmake coc-git coc-pyright coc-sh coc-highlight coc-yaml
 ```
