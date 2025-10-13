@@ -1,6 +1,7 @@
 ### config
 1. shell config
 ```bash
+#! /bin/bash
 cd 
 git clone https://github.com/Li-TianCheng/dev_config.git 
 sudo apt install zsh -y 
@@ -31,6 +32,7 @@ sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
 conda init zsh
 source ~/.zshrc
 pip install autopep8
+cd -
 ```
 2. vim-plugs config
 ```bash
