@@ -17,7 +17,8 @@ cp .tmux/.tmux.conf.local .
 cp dev_config/.tmux.conf . 
 wget https://github.com/neovim/neovim/releases/download/v0.10.3/nvim-linux64.tar.gz 
 tar -zxvf nvim-linux64.tar.gz 
-cp -r nvim-linux64/* /usr/ 
+cp -r nvim-linux64/* /usr/
+rm -rf nvim-linux64.tar.gz
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime 
 sh ~/.vim_runtime/install_awesome_vimrc.sh 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim 
@@ -27,7 +28,7 @@ mkdir -p .config/nvim/
 ln -s ~/.vimrc ~/.config/nvim/init.vim
 cp dev_config/coc-settings.json ~/.config/nvim/ 
 sudo apt install ack -y 
-sudo apt-get install clangd-12
+sudo apt-get install clangd-12 -y
 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
 conda init zsh
 source ~/.zshrc
