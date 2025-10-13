@@ -39,7 +39,6 @@ cd -
 ```bash
 # install vim plugs
 :PlugInstall
-# :CocCommand clangd.install
 # install coc.nvim plugs
 :CocInstall coc-json coc-clangd coc-cmake coc-git coc-pyright coc-sh coc-highlight coc-yaml
 ```
