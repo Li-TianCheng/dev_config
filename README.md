@@ -61,7 +61,3 @@ ctrl+b+i
 set (CMAKE_EXPORT_COMPILE_COMMANDS ON)
 ```
 
-* python format
-```python
-pip install autopep8
-```
